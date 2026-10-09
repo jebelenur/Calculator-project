@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <script src="https://kit.fontawesome.com/9bce7c4684.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <script src="./script/script.js"></script>
+  <div class="calculator">
+    <!-- Display Screen -->
+    <input type="text" id="display" readonly value="0">
+
+    <!-- buttons grid -->
+     <div class="buttons">
+        <!-- Row 1 -->
+        <div class="btn action-btn" id="btn-clear">C</div>
+        <div class="btn action-btn" id="btn-delete">
+            <i class="fa-solid fa-delete-left"></i>
+        </div>
+        <div class="btn operator-btn" id="btn-divide">
+            <i class="fa-solid fa-divide"></i>
+        </div>
+        <div class="btn operator-btn" id="btn-multiply">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="btn num-btn" id="btn-7">7</div>
+        <div class="btn num-btn" id="btn-8">8</div>
+        <div class="btn num-btn" id="btn-9">9</div>
+        <div class="btn operator-btn" id="btn-subtract">
+            <i class="fa-solid fa-minus"></i>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="btn num-btn" id="btn-4">4</div>
+        <div class="btn num-btn" id="btn-5">5</div>
+        <div class="btn num-btn" id="btn-6">6</div>
+        <div class="btn operator-btn" id="btn-add">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="btn num-btn" id="btn-1">1</div>
+        <div class="btn num-btn" id="btn-2">2</div>
+        <div class="btn num-btn" id="btn-3">3</div>
+        <div class="btn equal-btn" id="btn-equal">
+            <i class="fa-solid fa-equals"></i>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="btn num-btn zero-btn" id="btn-0">0</div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
